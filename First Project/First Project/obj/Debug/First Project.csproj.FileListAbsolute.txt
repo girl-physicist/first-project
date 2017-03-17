@@ -1,0 +1,6 @@
+F:\First project Console C#\First Project\First Project\bin\Debug\First Project.exe.config
+F:\First project Console C#\First Project\First Project\bin\Debug\First Project.exe
+F:\First project Console C#\First Project\First Project\bin\Debug\First Project.pdb
+F:\First project Console C#\First Project\First Project\obj\Debug\First Project.csprojResolveAssemblyReference.cache
+F:\First project Console C#\First Project\First Project\obj\Debug\First Project.exe
+F:\First project Console C#\First Project\First Project\obj\Debug\First Project.pdb
