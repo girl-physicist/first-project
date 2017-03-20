@@ -216,6 +216,20 @@ namespace First_Project
             //    j++;
             //}
             //Console.ReadKey();
+
+            //do While
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("While");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            int number;
+            do
+            {
+                Console.WriteLine("Enter number");
+                number = Convert.ToInt32(Console.ReadLine());
+            }
+            while (number !=5);
+                 Console.Write(number);
+                Console.ReadKey();
             #endregion
         }
     }
