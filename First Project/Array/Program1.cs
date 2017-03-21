@@ -79,17 +79,39 @@ namespace Array
                 Console.WriteLine(" ");
 
                 //Max and Min
-                //for (int i = 0; i < arr.Length; i++)
-                //{
-                //    arr[i] = rand.Next(-100, 100);
-                //    Console.Write(arr[i] + "\t");
-                //}
+                {
+                    int min = arr[0], max = arr[0];
+                    for (int i = 0; i < arr.Length; i++)
+                    {
+                        if (min > arr[i])
+                            min = arr[i];
+                        if (max < arr[i])
+                            max = arr[i];
+                    }
+                    {
+                        for (int i = 0; i < arr.Length; i++)
+                        {
+                            if (arr[i] == max)
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                            }
+                            else if (arr[i] == min)
+                                Console.ForegroundColor = ConsoleColor.Cyan;
+                            else Console.ForegroundColor = ConsoleColor.Gray;
+                       Console.Write(arr[i] + " ");
+                        }
+                        
+                    }
+                    Console.ForegroundColor = ConsoleColor.White;
+
+                    Console.Write("\n"+"min= " + min + "\n" + "max= " + max);
+                }
 
 
 
 
 
-
+                Console.WriteLine();
                 Console.WriteLine("To close the console, press 'Y', If you want to restart the script, press 'N'");
                 if (Console.ReadKey().Key == ConsoleKey.Y)
                     param = "close";
