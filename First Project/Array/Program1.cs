@@ -9,7 +9,7 @@ namespace Array
         {
             //Дан одномерный массив размером 10 и два числа P и Q (P<Q). Определить, сколько элементов массива лежит между P и Q.
             string param = "new";
-            while (param == "new") ;
+            while (param == "new")
             {
                 int[] arr = new int[10];
                 Random rand = new Random();
@@ -43,22 +43,6 @@ namespace Array
                     }
                 }
                 // Input P and Q
-                //    Console.WriteLine();
-                //Console.WriteLine("Enter P and Q (P < Q)");
-                //     string inputP = Console.ReadLine();
-                //     int P;
-                //     Int32.TryParse(inputP, out P);
-                //     string inputQ = Console.ReadLine();
-                //     int Q;
-                //     Int32.TryParse(inputQ, out Q);
-                //     if (P < Q)
-                //         Console.WriteLine("Your number P=" + P + " Your number Q= " + Q);
-                //     else
-                //     {
-                //         Console.WriteLine("You entered P>=Q. Please, Enter P and Q (P<Q) ");
-
-                //     }
-
                 var P = 0;
                 var Q = 0;
                 while (P >= Q)
@@ -96,18 +80,12 @@ namespace Array
                 if (Console.ReadKey().Key == ConsoleKey.Y)
                     param = "close";
                 else
+                {
                     param = "new";
-
-               
-
-
-
-
-
-
-
-
+                    Console.Clear();
                 }
+                    
+              }
             }
         }
     }
