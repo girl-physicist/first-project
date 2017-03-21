@@ -7,7 +7,6 @@ namespace Array
     {
         static void Main(string[] args)
         {
-            //Дан одномерный массив размером 10 и два числа P и Q (P<Q). Определить, сколько элементов массива лежит между P и Q.
             string param = "new";
             while (param == "new")
             {
@@ -23,9 +22,9 @@ namespace Array
                 Console.Write("\n" + "Set values using the random number generator. Enter ");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("2");
-                int choose = Convert.ToInt32(Console.Read());
+                string choose = Console.ReadLine();
                 Console.ForegroundColor = ConsoleColor.White;
-                if (choose == 1)
+                if (choose == "1")
                 {
                     for (int i = 0; i < arr.Length; i++)
                     {
@@ -42,14 +41,12 @@ namespace Array
                         Console.Write(arr[i] + "\t");
                     }
                 }
-                Console.WriteLine("\n");
                  // Input P and Q
                  var P = 0;
                  var Q = 0;
-                
                 while (P >= Q)
                 {
-                    Console.WriteLine("Enter P and Q (P < Q)");
+                    Console.WriteLine("\n"+"Enter P and Q (P < Q)");
                     Console.WriteLine("P:");
                     if (int.TryParse(Console.ReadLine(), out P))
                     {
@@ -75,9 +72,7 @@ namespace Array
                 for (int j = 0; j < arr.Length; j++)
                     if (P < arr[j] && Q > arr[j])
                         a += 1;
-                Console.WriteLine("The number of elements between P and Q = " + a + "elements");
-                Console.WriteLine(" ");
-
+                Console.WriteLine("\n"+"The number of elements between P and Q = " + a + " elements"+ "\n");
                 //Max and Min
                 {
                     int min = arr[0], max = arr[0];
@@ -98,27 +93,43 @@ namespace Array
                             else if (arr[i] == min)
                                 Console.ForegroundColor = ConsoleColor.Cyan;
                             else Console.ForegroundColor = ConsoleColor.Gray;
-                       Console.Write(arr[i] + " ");
+                       Console.Write(arr[i] + "\t");
                         }
-                        
                     }
                     Console.ForegroundColor = ConsoleColor.White;
-
-                    Console.Write("\n"+"min= " + min + "\n" + "max= " + max);
+                    Console.Write("\n"+ "\n" + "min= " + min + "\n" + "max= " + max + "\n");
                 }
+                //Insert sorting
+                int newElement, location;
+                for (int i = 1; i < arr.Length; i++)
+                {
+                    newElement = arr[i];
+                    location = i - 1;
+                    while (location >= 0 && arr[location] > newElement)
+                    {
+                        arr[location + 1] = arr[location];
+                        location = location - 1;
+                    }
+                    arr[location + 1] = newElement;
+                }
+                Console.Write("Sorted array:\n");
+                for (int i = 0; i < arr.Length; i++)
+                    Console.Write(arr[i]+"\t");
+                
 
 
 
 
 
                 Console.WriteLine();
-                Console.WriteLine("To close the console, press 'Y', If you want to restart the script, press 'N'");
+                Console.WriteLine("\n"+"To close the console, press 'Y', If you want to restart the script, press 'N'");
                 if (Console.ReadKey().Key == ConsoleKey.Y)
                     param = "close";
                 else
                 {
                     param = "new";
                     Console.Clear();
+
                 }
                     
               }
