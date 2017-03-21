@@ -42,9 +42,11 @@ namespace Array
                         Console.Write(arr[i] + "\t");
                     }
                 }
-                // Input P and Q
-                var P = 0;
-                var Q = 0;
+                Console.WriteLine("\n");
+                 // Input P and Q
+                 var P = 0;
+                 var Q = 0;
+                
                 while (P >= Q)
                 {
                     Console.WriteLine("Enter P and Q (P < Q)");
@@ -75,6 +77,18 @@ namespace Array
                         a += 1;
                 Console.WriteLine("The number of elements between P and Q = " + a + "elements");
                 Console.WriteLine(" ");
+
+                //Max and Min
+                //for (int i = 0; i < arr.Length; i++)
+                //{
+                //    arr[i] = rand.Next(-100, 100);
+                //    Console.Write(arr[i] + "\t");
+                //}
+
+
+
+
+
 
                 Console.WriteLine("To close the console, press 'Y', If you want to restart the script, press 'N'");
                 if (Console.ReadKey().Key == ConsoleKey.Y)
