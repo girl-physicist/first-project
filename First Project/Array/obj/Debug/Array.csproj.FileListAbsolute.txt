@@ -1,0 +1,6 @@
+F:\First project Console C#\First Project\Array\bin\Debug\Array.exe.config
+F:\First project Console C#\First Project\Array\bin\Debug\Array.exe
+F:\First project Console C#\First Project\Array\bin\Debug\Array.pdb
+F:\First project Console C#\First Project\Array\obj\Debug\Array.exe
+F:\First project Console C#\First Project\Array\obj\Debug\Array.pdb
+F:\First project Console C#\First Project\Array\obj\Debug\Array.csprojResolveAssemblyReference.cache

@@ -220,48 +220,43 @@ namespace First_Project
             //    Console.WriteLine(i);
             //}
             //Console.ReadKey();
-        
 
-        ////While
-        //Console.ForegroundColor = ConsoleColor.White;
-        //Console.WriteLine("While");
-        //Console.ForegroundColor = ConsoleColor.Cyan;
-        //int j=0;
-        //while (j <= 5) 
-        //{
-        //    Console.Write(j + "\t");
-        //    j++;
-        //}
-        //Console.ReadKey();
 
-        ////do While
-        //Console.ForegroundColor = ConsoleColor.White;
-        //Console.WriteLine("While");
-        //Console.ForegroundColor = ConsoleColor.Cyan;
-        //int number;
-        //do
-        //{
-        //    Console.WriteLine("Введи пароль");
-        //    number = Convert.ToInt32(Console.ReadLine());
-        //    if (number != 123)
-        //    {
-        //        Console.WriteLine("Не правльно");
-        //    }
-        //    else if (number == 123)
-        //    {
-        //        Console.WriteLine("Правильно");
-        //    }
-        //} while (number != 123);
-        //Console.WriteLine("Good buy");
-        //Console.ReadKey();
-        #endregion
-        #region Массивы
-        //do While
-        
-        Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("While");
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.ReadKey();
+            ////While
+            //Console.ForegroundColor = ConsoleColor.White;
+            //Console.WriteLine("While");
+            //Console.ForegroundColor = ConsoleColor.Cyan;
+            //int j=0;
+            //while (j <= 5) 
+            //{
+            //    Console.Write(j + "\t");
+            //    j++;
+            //}
+            //Console.ReadKey();
+
+            ////do While
+            //Console.ForegroundColor = ConsoleColor.White;
+            //Console.WriteLine("While");
+            //Console.ForegroundColor = ConsoleColor.Cyan;
+            //int number;
+            //do
+            //{
+            //    Console.WriteLine("Введи пароль");
+            //    number = Convert.ToInt32(Console.ReadLine());
+            //    if (number != 123)
+            //    {
+            //        Console.WriteLine("Не правльно");
+            //    }
+            //    else if (number == 123)
+            //    {
+            //        Console.WriteLine("Правильно");
+            //    }
+            //} while (number != 123);
+            //Console.WriteLine("Good buy");
+            //Console.ReadKey();
+            #endregion
+            #region Массивы
+
             #endregion
 
         }
